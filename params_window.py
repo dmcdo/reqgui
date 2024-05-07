@@ -6,7 +6,7 @@ from tkinter import filedialog, messagebox, ttk
 from requests import Session
 
 
-class ParamsFrame(tk.Toplevel):
+class ParamsWindow(tk.Toplevel):
     def __init__(self, master: tk.Misc, session: Session):
         super().__init__(master)
         self.protocol("WM_DELETE_WINDOW", self.on_close)
